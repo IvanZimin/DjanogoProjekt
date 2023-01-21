@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Home</title>
+    <style>
+    .menu {
+    border: 1px solid black;
+    }
+    .content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+    footer {
+    border: 1px solid blue;
+    }
+    </style>
 </head>
 <body>
-
+<nav class="menu">
+    <a href="% url 'item-list' %">Список товаров</a>
+</nav>
+<main class="content">
+    Добро пожаловать!
+</main>
+<footer>
+(с) Зимин И.А. 2023г.
+</footer>
+<nav class="menu">
+    <a href="{% url 'home'%}"></a> ДОМОЙ </a><a href="% url 'about' %">Об авторе </a>
 </body>
 </html>
