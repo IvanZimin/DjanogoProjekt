@@ -1,32 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
+{% load static %}
+<html lang="ru">
+<>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
     <title>Home</title>
     <style>
-    .menu {
-    border: 1px solid black;
-    }
-    .content {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    }
-    footer {
-    border: 1px solid blue;
-    }
+         .menu {
+         border: 1px solid black;
+         }
+         .content {
+         margin-top: 20px;
+         margin-bottom: 20px;
+         }
+         footer {
+         border: 1px solid blue;
+         }
     </style>
-</head>
 <body>
 <nav class="menu">
-    <a href="% url 'item-list' %">Список товаров</a>
+    <a href="{% url 'items-list' %}"> Список товаров</a>
 </nav>
 <main class="content">
     Добро пожаловать!
 </main>
 <footer>
-(с) Зимин И.А. 2023г.
+    (c)Верьяков Е.Е 2023г.
 </footer>
-<nav class="menu">
-    <a href="{% url 'home'%}"></a> ДОМОЙ </a><a href="% url 'about' %">Об авторе </a>
+
 </body>
 </html>

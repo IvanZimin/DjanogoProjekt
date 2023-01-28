@@ -1,14 +1,36 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
     <title>Item</title>
+        <style>
+         .menu {
+         border: 1px solid black;
+         }
+         .content {
+         margin-top: 20px;
+         margin-bottom: 20px;
+         }
+         footer {
+         border: 1px solid blue;
+         }
+    </style>
 </head>
 <body>
-<main class="content"></main>
+<nav class="menu">
+    <a href="{% url 'items-list' %}"> Список товаров</a>
+</nav>
+<main class="content">
 <h1> Страница товара </h1>
 Название: {{ item.name }} <br>
 Количество: {{ item.count }} <br>
-<a href="/items_list"></a>
+<a href="/items_list"> Назад </a>
+</main>
+<footer>
+    (c)Верьяков Е.Е 2023г.
+</footer>
+
 </body>
 </html>

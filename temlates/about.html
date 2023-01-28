@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    <title>Об Авторе</title>
 </head>
 <body>
-
+<h1>об авторе</h1>
+ Имя: <b> Егор </b> <br>
+Отчество: <b> Евгеньевич </b> <br>
+ Фамилия: <b> Верьяков </b> <br>
+ телефон: <b> 8-903-670-83-60 </b> <br>
+ email: <b> egorverakov@gmail.com </b> <br>
+<nav class="menu">
+    <a href="{% url 'home' %}">ДОМОЙ</a>
+</nav>
 </body>
 </html>
